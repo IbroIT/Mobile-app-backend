@@ -17,13 +17,11 @@ DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # Add your PythonAnywhere domain here
 # Example: 'yourusername.pythonanywhere.com'
-PYTHONANYWHERE_DOMAIN = os.environ.get('PYTHONANYWHERE_DOMAIN', 'yourusername.pythonanywhere.com')
+PYTHONANYWHERE_DOMAIN = os.environ.get('PYTHONANYWHERE_DOMAIN', 'backend213.pythonanywhere.com')
 
-ALLOWED_HOSTS = [
-    PYTHONANYWHERE_DOMAIN,
-    'localhost',
-    '127.0.0.1',
-]
+ALLOWED_HOSTS = ['*']
+
+
 
 # Application definition
 INSTALLED_APPS = [
